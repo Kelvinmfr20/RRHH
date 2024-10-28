@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Crear Usuario</h1>
+    <form id="createUserForm">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+
+        <label for="role">Rol:</label>
+        <select id="role">
+            <option value="admin">Admin</option>
+            <option value="user">Usuario</option>
+        </select>
+
+        <button type="submit">Crear Usuario</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
